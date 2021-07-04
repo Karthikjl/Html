@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex</title>
+    </head>
+    <body>
+        <div class="all">
+            <div class="container-1">
+                <div class="box1">
+                    <h1>Box - 1</h1>
+                    <p>This is box one.</p>
+                </div>
+                <div class="box2">
+                    <h1>Box - 2</h1>
+                    <p>This is box two.</p>
+                </div>
+                <div class="box3">
+                    <h1>Box - 3</h1>
+                    <p>This is box three.</p>
+                </div>
+            </div>
+            <div class="container-2">
+                <div class="box">
+                    <h1>Box - 1</h1>
+                    <p>This is box one.</p>
+                </div>
+                <div class="box">
+                    <h1>Box - 2</h1>
+                    <p>This is box two.</p>
+                </div>
+                <div class="box">
+                    <h1>Box - 3</h1>
+                    <p>This is box three.</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+    </body>
+    <style>
+        body{
+            background-color: rgb(59, 59, 59);
+            background-image: url();
+        }
+        .all {
+            background-image: url("https://miro.medium.com/max/6200/1*teBtR_0pirBnX4nURoMvLA.jpeg");
+            background-repeat: no-repeat;                        
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .container-1 div{
+            border: 1px white solid;       
+            padding: 15px;
+        }
+        .container-2 div{
+            border: 1px rgb(255, 0, 0) solid;   
+            padding: 15px;
+        }
+        @media(min-width:320px){
+
+            .container-1{
+                display: flex;
+                color: rgb(255, 255, 255);
+                background-color: rgba(0, 0, 0, 0.199);
+            }
+            .container-2{
+                display: flex;  
+                justify-content: space-around;  
+                color: rgb(255, 0, 0);  
+                background-color: rgba(0, 0, 0, 0.199);    
+            }}
+        .box{
+            flex: 1;
+            order: 1;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .box1{
+            flex: 1;
+            order: 1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .box2{
+            flex: 1;
+            order: 2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .box3{
+            flex: 1;
+            order: 3;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+
+
+
+
+    </style>
+</html>
