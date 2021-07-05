@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" type= "text/css" href="style.css">
+    <!-- <script src="javascript.js"></script> -->  
+</head>
+<body>
+    <h1>Learn JavaScript</h1>
+
+
+<script>
+    
+//variable var    
+    // var no = 1;
+    // var name = "karthic";   
+    // var no1 = 20;
+    // var no2 = 35;
+    // alert(no1 + no2);
+    // //parcial case
+    // var MyName = "karthic";
+    // //camel case
+    // var myName = "Karthic";
+    // //underscore case
+    // var my_name = "karthic";
+
+//arrays
+    // var bikes = ["pulsar","R15 v2","R15 v3"];
+    // bikes.push("HeroHonda");
+    // alert(bikes);
+    // alert(bikes.length);
+    // alert(bikes.sort());
+    // alert(bikes.reverse());
+
+//loops
+    //for loop
+    // var nameArray = ["karthic","jl","kk"];
+
+    // for (var i = 0; i < nameArray.length; i++) {
+    //     const element = nameArray[i];
+    //     console.log(element)        ;
+    // }
+
+    //while loop
+    // i = 1;
+    // while (i <= 5) {
+    //     console.log(i);
+    //     i++;
+    // }
+
+    //foreach
+    // var cars = ["tata","hundai","bmw"];
+    // cars.forEach(function(carNames){
+    //     console.log(carNames);
+    // });
+
+//conditions
+    //if else condition
+    // var num1 = 1;
+    // var num2 = 1;
+    // if (num1 == 2) {
+    //     console.log("Both are equal.");
+    // }
+    // else if(num1 == 0){
+    //     console.log("Num1 is only equal.");
+    // }
+    // else{
+    //     console.log("Both are not equal.")
+    // }
+
+//switch,case,default
+    // var fav_bike = "bullet";
+    // switch (fav_bike) {
+    //     case "HeroHonda":
+    //         console.log("wow, Your favaroite bike is hero honda.");
+    //         break;
+    //     case "pulsar":
+    //         console.log("wow, Your favaroite bike is pulsar.");
+    //         break;
+    //     case "R15 v3":
+    //         console.log("wow, Your favaroite bike is R15 v3.");
+    //         break;
+    //     default:
+    //         console.log("Plese select your favoite bike or see you selected bike is in list.");
+    //         alert("Plese select your favoite bike or see you selected bike is in list.")
+    //         break;
+    // }
+
+//objects literal
+    // var StudentDetails = {
+    //     name : "KarthicKeyan",
+    //     age : 17,
+    //     Standard : 12,
+    //     Books : ["Tamil","English","Maths","Physics","Chemistry","ComputerScience"],
+
+//embedded objects 
+    //     address : {
+    //         Room_no : 72/24,
+    //         street : "Tnpsc",
+    //         state : "TamilNadu" 
+    //     }        
+    // }
+    // console.log(StudentDetails.Books);
+    // console.log(StudentDetails.Books[0]);
+    //console.log(StudentDetails.address.Room_no + " " + StudentDetails.address.street);
+
+//object constructor
+    // var mobile = new Object();
+    // mobile.name = "Vivo";
+    // mobile.ram = 4;
+    // mobile.color="black";
+    // mobile.storage = 64;
+
+    // console.log(mobile.color);
+    // console.log(mobile.ram);
+    // console.log(mobile.storage);
+
+//functions
+    function mobiles(name1,ram1,color1,storage1) {
+        this.name1 = name1;
+        this.ram1 =ram1;
+        this.color1 = color1;
+        this.storage1 = storage1;
+    }
+
+    var oneplus = new mobiles("Oneplus",6,"Silver",128);
+    var samsung = new mobiles("Samsumg",4,"Blue",64);
+
+    console.log(samsung);
+    
+</script>
+</body>
+
+</html>
