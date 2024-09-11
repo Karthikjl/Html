@@ -1,0 +1,94 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: linear-gradient(to right, red, blue);
+}
+#timer {
+  background-color: rgb(110, 173, 255);
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 20px;
+  font-size: 2rem;
+  font-family: monospace;
+  color: aliceblue;
+  text-shadow: 1px 4px 3px black;
+  box-shadow: 1px 4px 15px black;
+  transition: 0.3s;
+}
+#stopWatchTxt {
+  font-family: monospace;
+  font-size: 5rem;
+  text-shadow: 1px 3px 2px rgb(22, 22, 22);
+}
+
+#circle {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clcimg {
+  width: auto;
+  height: 100px;
+}
+/* #clcimg {
+  width: auto;
+  height: 100px;
+  /* transform-origin: center center center;
+  animation: clcimg 100s linear infinite; 
+} 
+
+/* @keyframes clcimg {
+  0% { 
+    transform: rotate(0); 
+  }
+  100% { 
+    transform: rotate(360deg);
+  }
+} */
+
+#btns button {
+  font-size: 1.5rem;
+  border: none;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px black;
+
+  text-shadow: 1px 3px rgb(105, 105, 105);
+}
+
+#startBtn {
+  background-color: rgb(0, 255, 34);
+}
+#stopbtn {
+  background-color: rgb(255, 0, 0);
+}
+#resetBtn {
+  background-color: rgb(0, 132, 255);
+}
+
+#startBtn:hover {
+  background-color: rgb(131, 255, 146);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+#stopbtn:hover {
+  background-color: rgb(255, 99, 99);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+#resetBtn:hover {
+  background-color: rgb(138, 198, 255);
+  transform: scale3d(1.1, 1.1, 1.1);
+}

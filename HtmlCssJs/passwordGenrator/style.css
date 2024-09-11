@@ -1,0 +1,59 @@
+body {
+  text-align: center;
+  margin: 20px;
+  padding: 25px;
+}
+h1 {
+  font-size: 3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input {
+  font-size: 1.8em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: auto;
+  text-align: center;
+  border-radius: 20px 10px;
+  margin: 5px;
+  padding: 10px;
+}
+#contentdiv{
+    border-radius: 20px;
+    box-shadow: 0 3px 6px 0 rgb(80, 80, 80);
+    padding: 20px;
+}
+#checkbox_btn {
+  font-size: 2em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+button {
+  font-size: 1.1em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  border-radius: 15px;
+  background-color: rgb(88, 155, 255);
+  color: white;
+  box-shadow: 0 4px 8px 0 rgb(75, 75, 75);
+  border: none;
+  padding: 10px;
+  margin: 9px;
+}
+button:hover {
+  background-color: rgb(38, 125, 255);
+}
+button:active {
+  background-color: rgb(112, 169, 255);
+}
+input[type="checkbox"] {
+  size: 200px;
+  accent-color: rgb(37, 129, 190);
+  transform: scale;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-wrap: wrap;
+}

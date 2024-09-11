@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(255, 120, 67);
+}
+#Head {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 161, 98);
+  font: bold;
+  text-shadow: 1px 1px 3px black;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+}
+#Calculator {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: antiquewhite;
+  border: none;
+  border-radius: 15px;
+  max-width: 500px;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.325);
+}
+#display {
+  width: 100%;
+  padding: 20px;
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  background-color: rgb(249, 163, 106);
+  cursor: default;
+  color: white;
+  border-radius: 10px;
+}
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
+}
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(242, 157, 0);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.581);
+}
+
+button:hover {
+  background-color: rgb(255, 198, 93);
+  transform: scale(1.01);
+}
+
+button:active {
+  background-color: rgba(255, 198, 93, 0.511);
+  transform: scale(1.1);
+}
+
+.operator-btn {
+  background-color: rgb(105, 138, 255);
+}
+
+.operator-btn:hover {
+  background-color: rgba(105, 138, 255, 0.672);
+}
+
+.operator-btn:active {
+  background-color: rgba(149, 172, 255, 0.672);
+}

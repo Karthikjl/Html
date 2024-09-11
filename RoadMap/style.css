@@ -1,0 +1,23 @@
+/* Ensure the html and body take up the full height and width of the viewport */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevents scrolling on the body */
+  }
+  
+  /* Style the iframe to fill the entire viewport and fit the content */
+  iframe {
+    display: block; /* Ensures no whitespace around the iframe */
+    width: 100%;
+    height: 100%;
+    border: none; /* Removes any default borders */
+    box-sizing: border-box; /* Ensures padding and borders are included in the width and height */
+  }
+  
+  /* If the iframe content overflows, you can use this to hide the overflow */
+  iframe {
+    overflow: hidden; /* Hides overflow from the iframe content */
+  }
+  

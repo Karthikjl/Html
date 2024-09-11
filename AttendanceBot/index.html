@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Display</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Button Styling */
+    .chatbot-button {
+      padding: 15px 25px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .chatbot-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Chatbot Window Styling */
+    .chatbot-container {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 350px;
+      height: 430px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      display: none; /* Initially hidden */
+    }
+
+    /* Chatbot Header Styling */
+    .chatbot-header {
+      background-color: #007bff;
+      padding: 10px;
+      color: white;
+      font-size: 16px;
+      text-align: center;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    /* Chatbot Close Button */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Iframe to load the chatbot */
+    iframe {
+      width: 100%;
+      height: calc(100% - 40px); /* Adjust height considering header */
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button to Open Chatbot -->
+  <button class="chatbot-button" onclick="toggleChatbot()">Chat with Us</button>
+
+  <!-- Chatbot Container -->
+  <div class="chatbot-container" id="chatbot">
+    <div class="chatbot-header">
+      Chat Support
+      <button class="close-btn" onclick="toggleChatbot()">×</button>
+    </div>
+    <iframe allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/d2ca2c68-2924-4c5b-b733-43fbb7dec006"></iframe>
+  </div>
+
+  <script>
+    // JavaScript to toggle the chatbot's visibility
+    function toggleChatbot() {
+      var chatbot = document.getElementById("chatbot");
+      if (chatbot.style.display === "none" || chatbot.style.display === "") {
+        chatbot.style.display = "block";
+      } else {
+        chatbot.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

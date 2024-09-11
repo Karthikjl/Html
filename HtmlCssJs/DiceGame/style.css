@@ -1,0 +1,52 @@
+#DiceTitle {
+  text-align: center;
+  font: 3em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+#noOfdice {
+  font-size: 1.5em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 25px;
+  margin: 20px;
+}
+
+input {
+  font-size: 2rem;
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  margin: 20px;
+  border: 1px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+  font-size: 1.5em;
+  color: aliceblue;
+  padding: 15px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: rgb(38, 194, 106);
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+  background-color: rgb(52, 231, 130);
+}
+
+button:active {
+  background-color: rgb(52, 231, 160);
+}
+
+#diceResult{
+    margin: 25px;
+    font-size: 1.5em;
+}
+
+#diceImages{
+    margin: 25px;
+    font-size: 1.5em;
+}
